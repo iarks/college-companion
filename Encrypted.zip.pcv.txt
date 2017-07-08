@@ -1,0 +1,2 @@
+Encrypted.zip.pcv has been encrypted via picocrypt version 1.46
+It contains the docs and app logos in encrypted form

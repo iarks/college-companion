@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="72dp"
+        android:background="#F44335"
+        android:id="@+id/urgency"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="72dp"
+                  android:paddingLeft="16dp"
+                  android:orientation="vertical"
+                  android:paddingRight="16dp"
+                  android:gravity="center">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:paddingRight="16dp"
+                      android:paddingBottom="10dp"
+                      android:gravity="center">
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_newsheader"
+                android:text="News Header"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_newsdate"
+                android:text="Date"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_newsbody"
+            android:text="The body is displayed here"
+            android:singleLine="true"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

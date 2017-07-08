@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Notifications">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_newnotifications"
+            android:title="@string/pref_title_new_message_notifications"
+            android:summary="Turn notifications on or off"/>
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="switch_newnotifications"
+            android:key="switch_vibratenewnotifications"
+            android:title="@string/pref_title_vibrate"
+            android:summary="Device vibrates for new notifications"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_silentnotifications"
+            android:dependency="switch_newnotifications"
+            android:title="@string/pref_title_silent"
+            android:summary="Turn off notification sound"/>
+
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="switch_newnotifications"
+            android:key="select_alerttone"
+            android:ringtoneType="notification"
+            android:title="@string/pref_title_ringtone"
+            android:summary="Set Alert Tone"/>
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory
+        android:title="Sync settings">
+
+        <ListPreference
+            android:defaultValue="180"
+            android:entries="@array/pref_sync_frequency_titles"
+            android:entryValues="@array/pref_sync_frequency_values"
+            android:key="sync_frequency"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_sync_frequency"
+            android:summary="%s"/>
+    </PreferenceCategory>
+</PreferenceScreen>

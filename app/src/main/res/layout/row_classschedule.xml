@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_dayname"
+        android:text="Monday"
+        android:layout_margin="15dp"
+        android:textSize="27sp"
+        android:singleLine="true"
+        android:textColor="#254286"
+        android:textStyle="bold">
+        </TextView>
+
+
+</LinearLayout>

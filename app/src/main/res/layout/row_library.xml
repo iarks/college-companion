@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:text="130212"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:background="#a0b4e1"
+        android:textStyle="bold"
+        android:id="@+id/txt_bookid"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="72dp"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:paddingRight="16dp"
+                  android:paddingTop="8dp"
+                  android:paddingLeft="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_bookname"
+            android:text="Book name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_author"
+            android:text="Author"
+            android:textStyle="italic"
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_issuedate"
+            android:textStyle="italic"
+            android:text="Time"
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+</LinearLayout>
